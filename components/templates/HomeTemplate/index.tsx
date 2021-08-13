@@ -32,12 +32,12 @@ interface HomeTemplateProps {
 
 const styles = StyleSheet.create({
 	container: {
-		marginTop: 5 * rem,
+		marginTop: 0 * rem,
 		overflow: 'visible'
 	},
 	header: {
 		margin: rem,
-		marginBottom: 0
+		marginBottom: 0,
 	},
 	input: {
 		marginVertical: rem

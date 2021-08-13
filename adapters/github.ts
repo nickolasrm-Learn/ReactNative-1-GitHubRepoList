@@ -19,7 +19,11 @@ const api = createInstance()
 export function getRepos(user: string,
 	thenCb: (repos: object[]) => void,
 	catchCb: (error: string) => void) {
-	api.get(`/users/${user}/repos`)
+	api.get(`/users/${user}/repos`, {
+		params: {
+			per_page: 100
+		}
+	})
 		.then(res => thenCb(res.data))
 		.catch(res => catchCb(res.message))
 }
