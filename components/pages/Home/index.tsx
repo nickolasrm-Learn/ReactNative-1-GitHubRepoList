@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useCallback } from 'react'
 import HomeTemplate from '../../templates/HomeTemplate'
 import uuid from 'uuid-random'
 import i18n from '../../../i18n'
@@ -18,7 +18,8 @@ export default function Home() {
 	/** If a user is found, it sets setRepos variable with the user repositories data.
 	 * Otherwise, it shows the modal
 	 */
-	const handleInputSubmit = (ev: NativeSyntheticEvent<TextInputSubmitEditingEventData>) => {
+	// useCallback avoids redefining function
+	const handleInputSubmit = useCallback((ev: NativeSyntheticEvent<TextInputSubmitEditingEventData>) => {
 		getRepos(ev.nativeEvent.text,
 			(data: any[]) => {
 				const newRepos = data.map((repo) => {
@@ -33,7 +34,7 @@ export default function Home() {
 			(error: string) => {
 				setError(true)
 			})
-	}
+	}, [setRepos, setError, uuid, getRepos])
 
 	return (
 		<HomeTemplate error={error}

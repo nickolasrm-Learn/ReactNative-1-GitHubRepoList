@@ -20,10 +20,10 @@ const List: React.FC<ListProps> = (props) => {
 	return (<FlatList contentContainerStyle={[styles.list, props.style]}
 		renderItem={
 			({ item }) =>
-				<ListItem key={item.key} title={item.title}
-					description={item.description} />
+				<ListItem key={item.key} title={item.title} // <- Important to define key 
+					description={item.description} />					// to avoid unnecessary rerendering
 		}
 		data={props.data} />)
 }
 
-export default List
+export default React.memo(List) // <- Avoid rerendering when a modal is loaded

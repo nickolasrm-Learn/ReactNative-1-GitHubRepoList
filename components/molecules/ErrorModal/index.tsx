@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useCallback } from 'react'
 import {
 	StyleSheet, Modal, View,
 	GestureResponderEvent
@@ -48,9 +48,10 @@ const styles = StyleSheet.create({
 /** Used to display a big rectangle with error messages */
 const ErrorModal: React.FC<ErrorModalProps> = (props) => {
 	/** Closes modal */
-	const handlePress = (ev: GestureResponderEvent) => {
+	// useCallback avoids redefining same function
+	const handlePress = useCallback((ev: GestureResponderEvent) => {
 		props.setVisible(false)
-	}
+	}, [props.setVisible])
 
 	return (<Modal animationType="fade"
 		transparent={true}
@@ -71,4 +72,4 @@ const ErrorModal: React.FC<ErrorModalProps> = (props) => {
 	</Modal>)
 }
 
-export default ErrorModal
+export default React.memo(ErrorModal) // <- Avoid rerendering when the repo list is loaded
