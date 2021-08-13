@@ -16,7 +16,7 @@ const styles = StyleSheet.create({
 	}
 })
 
-/** Regular application Text */
+/** Regular styled application Text */
 const Text: React.FC<TextProps> = (props) => {
 	return (<RText {...props} style={[styles.text, props.style]}>
 		{props.children}

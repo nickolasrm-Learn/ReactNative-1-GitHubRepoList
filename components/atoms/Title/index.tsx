@@ -11,7 +11,7 @@ const styles = StyleSheet.create({
 	}
 })
 
-/** Regular application Title */
+/** Regular styled application Title */
 const Title: React.FC<TextProps> = (props) => {
 	return (<Text {...props} style={[styles.title, props.style]}>
 		{props.children}
