@@ -9,9 +9,15 @@ interface ListProps {
 	data: ListItemProps[]
 }
 
+const styles = StyleSheet.create({
+	list: {
+		paddingBottom: 10 * rem
+	}
+})
+
 /** Title and description List */
 const List: React.FC<ListProps> = (props) => {
-	return (<FlatList contentContainerStyle={props.style}
+	return (<FlatList contentContainerStyle={[styles.list, props.style]}
 		renderItem={
 			({ item }) =>
 				<ListItem key={item.key} title={item.title}

@@ -10,7 +10,7 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#fff',
     alignItems: 'stretch',
-    justifyContent: 'center',
+    justifyContent: 'flex-start',
     paddingTop: getStatusBarHeight()
   },
 })
