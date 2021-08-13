@@ -1,0 +1,6 @@
+{
+	"appTitle": "GitHub Repositories",
+	"errorTitle": "User not found",
+	"errorMessage": "Maybe you miswrite the username",
+	"inputPlaceholder": "GitHub Username"
+}

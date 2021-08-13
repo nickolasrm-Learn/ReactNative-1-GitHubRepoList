@@ -1,21 +1,25 @@
 import React, { useState } from 'react'
 import HomeTemplate from '../../templates/HomeTemplate'
 import uuid from 'uuid-random'
+import i18n from '../../../i18n'
+
+const { t } = i18n
 
 /** Repositories search screen */
 export default function Home() {
-	const [error, setError] = useState(true)
+	const [error, setError] = useState(false)
 
 	return (
 		<HomeTemplate error={error}
 			setError={setError}
-			errorTitle="User not found"
-			errorMessage="Maybe you miswrite the username"
+			errorTitle={t('errorTitle')}
+			errorMessage={t('errorMessage')}
 
-			inputPlaceholder="GitHub username"
-			onInputSubmit={() => { }}
+			inputPlaceholder={t('inputPlaceholder')}
+			onInputSubmit={() => { }
+			}
 
-			title="GitHub Repositories"
+			title={i18n.t('appTitle')}
 
 			data={
 				[{

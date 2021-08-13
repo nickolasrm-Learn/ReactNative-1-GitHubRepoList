@@ -1,3 +1,4 @@
+import i18n from './i18n'
 import { StatusBar } from 'expo-status-bar'
 import React from 'react'
 import { SafeAreaView, StyleSheet } from 'react-native'
