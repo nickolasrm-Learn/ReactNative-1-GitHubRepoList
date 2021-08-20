@@ -24,7 +24,8 @@ const ModalButton: React.FC<ModalButtonProps> = (props) => {
 			color: props.color || 'black',
 			textAlign: 'center',
 			fontWeight: 'bold'
-		}}>
+		}}
+			testID="text-styles-component">
 			{props.text}
 		</Text>
 	</TouchableOpacity>)

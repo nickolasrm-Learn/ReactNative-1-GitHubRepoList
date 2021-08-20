@@ -25,8 +25,16 @@ const Input: React.FC<TextInputProps> = (props) => {
 			: unfocusedForegroundColor
 	}]}
 		underlineColorAndroid='transparent'
-		onFocus={useCallback(() => setFocused(true), [])}
-		onBlur={useCallback(() => setFocused(false), [])}
+		onFocus={useCallback((ev) => {
+			setFocused(true)
+			if (props.onFocus)
+				props.onFocus(ev)
+		}, [props.onFocus])}
+		onBlur={useCallback((ev) => {
+			setFocused(false)
+			if (props.onBlur)
+				props.onBlur(ev)
+		}, [props.onBlur])}
 		onSubmitEditing={props.onSubmitEditing}
 		editable />)
 }
