@@ -1,6 +1,6 @@
 import React from 'react'
 import App from '../App.tsx'
-import { api } from '../adapters/Github'
+import { api } from '../src/adapters/Github'
 import { render, fireEvent, waitFor } from '@testing-library/react-native'
 
 jest.spyOn(api, 'get')

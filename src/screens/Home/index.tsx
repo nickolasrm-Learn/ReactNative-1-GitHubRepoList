@@ -2,9 +2,9 @@ import React, { useState, useCallback } from 'react'
 import HomeTemplate from '../../templates/HomeTemplate'
 import uuid from 'uuid-random'
 import i18n from '../../../i18n'
-import { getRepos } from '../../../adapters/Github'
+import { getRepos } from '../../adapters/Github'
 import { NativeSyntheticEvent, TextInputSubmitEditingEventData } from 'react-native'
-import { ItemData } from '../../molecules/ListItem'
+import { ItemData } from '../../components/ListItem'
 
 const { t } = i18n
 

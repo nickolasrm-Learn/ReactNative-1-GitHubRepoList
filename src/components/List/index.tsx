@@ -1,7 +1,7 @@
 import React from 'react'
-import ListItem, { ItemData } from '../../molecules/ListItem'
+import ListItem, { ItemData } from '../ListItem'
 import { FlatList, StyleSheet } from 'react-native'
-import { rem } from '../../../other/Style'
+import { rem } from '../../other/Style'
 
 interface ListProps {
 	style?: object

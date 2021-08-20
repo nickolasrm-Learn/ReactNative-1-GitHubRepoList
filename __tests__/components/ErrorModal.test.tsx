@@ -1,6 +1,6 @@
 import React from 'react'
 import { fireEvent, render } from '@testing-library/react-native'
-import ErrorModal from '../../components/molecules/ErrorModal'
+import ErrorModal from '../../src/components/ErrorModal'
 
 describe('Error modal', () => {
   let visible = true

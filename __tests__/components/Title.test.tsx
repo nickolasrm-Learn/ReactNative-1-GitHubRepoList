@@ -1,6 +1,6 @@
 import React from 'react'
 import { render } from '@testing-library/react-native'
-import Title from '../../components/atoms/Title'
+import Title from '../../src/components/Title'
 import { hasStyle } from '../common'
 
 test('Title rendered', () => {

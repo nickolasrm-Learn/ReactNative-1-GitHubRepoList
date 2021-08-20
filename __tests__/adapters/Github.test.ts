@@ -1,5 +1,5 @@
 import { waitFor } from '@testing-library/react-native'
-import { api, getRepos } from '../../adapters/Github'
+import { api, getRepos } from '../../src/adapters/Github'
 
 jest.spyOn(api, 'get')
 api.get.mockImplementation((address: string) => {

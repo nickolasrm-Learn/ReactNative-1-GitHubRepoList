@@ -1,8 +1,8 @@
 import React from 'react'
 import { View, ViewProps, StyleSheet } from 'react-native'
-import Title from '../../atoms/Title'
-import Text from '../../atoms/Text'
-import { rem } from '../../../other/Style'
+import Title from '../Title'
+import Text from '../Text'
+import { rem } from '../../other/Style'
 
 interface BasicItemData {
 	/** Large text displayed in the inner top part of a ListItem */

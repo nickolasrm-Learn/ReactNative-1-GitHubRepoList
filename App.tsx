@@ -3,7 +3,7 @@ import { StatusBar } from 'expo-status-bar'
 import React from 'react'
 import { SafeAreaView, StyleSheet } from 'react-native'
 import { getStatusBarHeight } from 'react-native-status-bar-height'
-import Home from './components/pages/Home'
+import Home from './src/screens/Home'
 
 const styles = StyleSheet.create({
   container: {

@@ -1,6 +1,6 @@
 import React from 'react'
 import { render } from '@testing-library/react-native'
-import List from '../../components/organisms/List'
+import List from '../../src/components/List'
 import { hasContentContainerStyle } from '../common'
 
 test('Rendering list items', () => {

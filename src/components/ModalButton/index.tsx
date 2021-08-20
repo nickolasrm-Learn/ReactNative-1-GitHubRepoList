@@ -3,7 +3,7 @@ import {
 } from 'react-native'
 import React from 'react'
 import Text from '../Text'
-import { rem } from '../../../other/Style'
+import { rem } from '../../other/Style'
 
 interface ModalButtonProps extends TouchableOpacityProps {
 	text: string,

@@ -1,6 +1,6 @@
 import React from 'react'
 import { render, fireEvent } from '@testing-library/react-native'
-import Input from '../../components/atoms/Input'
+import Input from '../../src/components/Input'
 
 test('Submit editing', () => {
   const fn = jest.fn()

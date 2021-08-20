@@ -1,6 +1,6 @@
 import React from 'react'
 import { render } from '@testing-library/react-native'
-import Text from '../../components/atoms/Text'
+import Text from '../../src/components/Text'
 import { hasStyle } from '../common'
 
 test('Text rendered', () => {
