@@ -16,7 +16,9 @@ const styles = StyleSheet.create({
 	}
 })
 
-/** Regular styled application Text */
+/** Regular styled application Text
+ * Responsive text to be used for content displaying
+ */
 const Text: React.FC<TextProps> = (props) => {
 	return (<RText {...props} style={[styles.text, props.style]}>
 		{props.children}

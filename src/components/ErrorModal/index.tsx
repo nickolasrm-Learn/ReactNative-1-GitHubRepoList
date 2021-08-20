@@ -11,6 +11,11 @@ import ModalButton from '../ModalButton'
 import Text from '../Text'
 import Title from '../Title'
 
+/*
+A Modal is a usually interface blocking and screen centered component 
+displayed in the middle of the screen.
+*/
+
 interface ErrorModalProps {
 	title: string,
 	message: string,
@@ -46,7 +51,12 @@ const styles = StyleSheet.create({
 	}
 })
 
-/** Used to display a big rectangle with error messages */
+/** Used to display a big rectangle with error messages
+ * This component occupies the entire screen displaying a title
+ * and a description message with a red big OK button to close it.
+ * It is only an informative modal, which means it doesn't execute 
+ * custom operations, only messages.
+ */
 const ErrorModal: React.FC<ErrorModalProps> = (props) => {
 	/** Closes modal */
 	// useCallback avoids redefining same function

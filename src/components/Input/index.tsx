@@ -4,6 +4,11 @@ import {
 } from 'react-native'
 import { rem, foregroundColor, unfocusedForegroundColor } from '../../other/Style'
 
+/**
+ * The TextInput component is a regular input,
+ * but this is a component designed to use the system native input.
+ */
+
 const styles = StyleSheet.create({
 	input: {
 		borderWidth: 2,
@@ -14,7 +19,11 @@ const styles = StyleSheet.create({
 	}
 })
 
-/** Styled regular TextInput */
+/** Styled regular TextInput 
+ * This is a regular textinput with all its props, but with a border
+ * and padding. Also it changes its style whenever the user focuses
+ * and unfocuses the component
+*/
 const Input: React.FC<TextInputProps> = (props) => {
 	const [isFocused, setFocused] = useState(false)
 

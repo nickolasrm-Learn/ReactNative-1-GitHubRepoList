@@ -5,7 +5,7 @@ import ErrorModal from '../../components/ErrorModal'
 import List from '../../components/List'
 import Title from '../../components/Title'
 import { rem } from '../../other/Style'
-import { ListItemProps } from '../../components/ListItem'
+import { ItemData } from '../../components/ListItem'
 import { NativeSyntheticEvent } from 'react-native'
 
 interface HomeTemplateProps {
@@ -27,7 +27,7 @@ interface HomeTemplateProps {
 	errorMessage: string,
 
 	/** List of repositories are gonna be displayed */
-	data: ListItemProps[]
+	data: ItemData[]
 }
 
 const styles = StyleSheet.create({
@@ -47,6 +47,13 @@ const styles = StyleSheet.create({
 	}
 })
 
+/* 
+A template is a way of creating screens without content and let them to be filled when necessary.
+For example, lets say you have to have multiple pages with a title and text, but the text changes for each of them.
+Instead of creating multiple pages with the same structure, you can create a template and pass data to it.
+It saves you writing time and makes the code more maintainable.
+ */
+/** HomeTemplate is a not content filled set of components of the app Home screen */
 const HomeTemplate: React.FC<HomeTemplateProps> = (props) => {
 	return (
 		<View style={styles.container}>

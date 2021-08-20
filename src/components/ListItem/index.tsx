@@ -4,6 +4,12 @@ import Title from '../Title'
 import Text from '../Text'
 import { rem } from '../../other/Style'
 
+/*
+A list item is the component minimal component displayed within a list.
+This is an example of a custom list item. Instead of a regular item, which
+only shows a text in a view, this custom item shows a title and a description.
+*/
+
 interface BasicItemData {
 	/** Large text displayed in the inner top part of a ListItem */
 	title: string,
@@ -32,7 +38,10 @@ const styles = StyleSheet.create({
 	}
 })
 
-/** Custom list item with title and description */
+/** Custom list item with title and description
+ * This is a custom list item to be used in a FlatList.
+ * It shows a styled Title and a text Description under it
+ */
 const ListItem: React.FC<ListItemProps> = (props) => {
 	return (<View testID="list-item-view"
 		{...props}

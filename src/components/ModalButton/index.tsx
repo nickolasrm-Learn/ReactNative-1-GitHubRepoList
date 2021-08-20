@@ -16,7 +16,11 @@ const styles = StyleSheet.create({
 	}
 })
 
-/** Button to be used into modals */
+/** Button to be used in modals
+ * This button is a text centered and container stylable 
+ * component desired to be used in a modal. For example, this can be 
+ * used as an OK button of a modal
+ */
 const ModalButton: React.FC<ModalButtonProps> = (props) => {
 	return (<TouchableOpacity {...props}
 		style={[styles.button, props.style]}>

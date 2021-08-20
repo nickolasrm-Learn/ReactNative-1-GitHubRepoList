@@ -3,9 +3,14 @@ import ListItem, { ItemData } from '../ListItem'
 import { FlatList, StyleSheet } from 'react-native'
 import { rem } from '../../other/Style'
 
+/*
+This is an example of React Native list. A list is a component
+created to display sequence of items in a scrollable panel
+*/
+
 interface ListProps {
 	style?: object
-	/** List of items are gonna be shown */
+	/** List of item contents are gonna be shown */
 	data: ItemData[],
 	testID?: string
 }
@@ -16,7 +21,10 @@ const styles = StyleSheet.create({
 	}
 })
 
-/** Title and description List */
+/** Title and description List 
+ * This list is designed to display items with description and title only.
+ * An example of use for it is to display repositories.
+*/
 const List: React.FC<ListProps> = (props) => {
 	return (<FlatList testID={props.testID}
 		contentContainerStyle={[styles.list, props.style]}
