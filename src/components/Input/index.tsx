@@ -20,7 +20,7 @@ const styles = StyleSheet.create({
 })
 
 /** Styled regular TextInput 
- * This is a regular textinput with all its props, but with a border
+ * This is a regular TextInput with all its props, but with a border
  * and padding. Also it changes its style whenever the user focuses
  * and unfocuses the component
 */
