@@ -1,11 +1,11 @@
 import React from 'react'
 import { StyleSheet, TextInputSubmitEditingEventData, View } from 'react-native'
-import Input from '../../atoms/Input'
-import ErrorModal from '../../molecules/ErrorModal'
-import List from '../../organisms/List'
-import Title from '../../atoms/Title'
-import { rem } from '../../../other/Style'
-import { ListItemProps } from '../../molecules/ListItem'
+import Input from '../../components/Input'
+import ErrorModal from '../../components/ErrorModal'
+import List from '../../components/List'
+import Title from '../../components/Title'
+import { rem } from '../../other/Style'
+import { ListItemProps } from '../../components/ListItem'
 import { NativeSyntheticEvent } from 'react-native'
 
 interface HomeTemplateProps {

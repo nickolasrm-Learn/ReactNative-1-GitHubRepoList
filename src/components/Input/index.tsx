@@ -2,7 +2,7 @@ import React, { useCallback, useState } from 'react'
 import {
 	StyleSheet, TextInput, TextInputProps
 } from 'react-native'
-import { rem, foregroundColor, unfocusedForegroundColor } from '../../../other/Style'
+import { rem, foregroundColor, unfocusedForegroundColor } from '../../other/Style'
 
 const styles = StyleSheet.create({
 	input: {

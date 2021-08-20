@@ -1,6 +1,6 @@
 import React from 'react'
 import { render } from '@testing-library/react-native'
-import ListItem from '../../components/molecules/ListItem'
+import ListItem from '../../src/components/ListItem'
 import { hasStyle } from '../common'
 
 test('Title and description rendered', () => {

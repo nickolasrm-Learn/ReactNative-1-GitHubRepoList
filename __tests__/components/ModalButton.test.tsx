@@ -1,6 +1,6 @@
 import React from 'react'
 import { render } from '@testing-library/react-native'
-import ModalButton from '../../components/atoms/ModalButton'
+import ModalButton from '../../src/components/ModalButton'
 import { hasStyle } from '../common'
 
 test('Multiple styles', () => {

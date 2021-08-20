@@ -3,7 +3,7 @@ import {
 	Text as RText, TextProps as RTextProps,
 	StyleSheet
 } from 'react-native'
-import { foregroundColor, rem } from '../../../other/Style'
+import { foregroundColor, rem } from '../../other/Style'
 
 interface TextProps extends RTextProps {
 	style?: object

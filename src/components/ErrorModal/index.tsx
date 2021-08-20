@@ -6,10 +6,10 @@ import {
 import {
 	backgroundColor, rem,
 	errorBackgroundColor, errorForegroundColor
-} from '../../../other/Style'
-import ModalButton from '../../atoms/ModalButton'
-import Text from '../../atoms/Text'
-import Title from '../../atoms/Title'
+} from '../../other/Style'
+import ModalButton from '../ModalButton'
+import Text from '../Text'
+import Title from '../Title'
 
 interface ErrorModalProps {
 	title: string,

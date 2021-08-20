@@ -1,6 +1,6 @@
 import React from 'react'
 import { Text, StyleSheet, TextProps } from 'react-native'
-import { foregroundColor, rem } from '../../../other/Style'
+import { foregroundColor, rem } from '../../other/Style'
 
 const styles = StyleSheet.create({
 	title: {
