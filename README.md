@@ -17,16 +17,23 @@ GitHubRepoList is the first application I made using React Native. It is a simpl
   alt="An animation of the app usage" 
   width="200px"/>
 
+## Features
+* Responsive: Both texts and screen rotation are optimized
+* Tested: The application and its components are tested with unit and functional tests
+* Internationalized: Support for multiple languages
+* Documented: All components are documented with docstrings and comments
+* Performance optimized: Use of memos
+
 ## What is React Native?
 React Native is a mobile development framework made by Facebook. It allows you to write React code using JavaScript and to compile it to native Android and iOS code. This can drastically improve performance when compared to webview ports like [Phonegap](https://en.wikipedia.org/wiki/Apache_Cordova) and [AppsGeyser](https://appsgeyser.com/).
 
 ## How to use it
 1. Make sure you have Node and npm installed. If not, download them [here](https://nodejs.org/en/)
 2. Clone this repository into any folder in your computer
-3. Open a terminal window in the repository root folder and run `npm install` and then `npm start`
+3. Open a terminal window in the repository root folder and run `npm install`, and then `npm start`
 4. A browser window should opened in your computer. Check if it happened
 5. Download Expo Go into [Play Store](https://play.google.com/store/apps/details?id=host.exp.exponent&referrer=www) or [App Store](https://apps.apple.com/app/apple-store/id982107779)
-6. Follow the in app instructions and read the qr code displayed into the previously opened Expo tab bottom-left corner with the Expo app 
+6. Follow the in app instructions in your phone and read the qr code displayed into the previously opened Expo tab bottom-left corner with the Expo app 
 7. Wait for the app to be loaded
 8. Enjoy
 
