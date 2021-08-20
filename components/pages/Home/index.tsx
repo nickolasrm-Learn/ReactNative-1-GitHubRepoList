@@ -2,9 +2,9 @@ import React, { useState, useCallback } from 'react'
 import HomeTemplate from '../../templates/HomeTemplate'
 import uuid from 'uuid-random'
 import i18n from '../../../i18n'
-import { getRepos } from '../../../adapters/github'
+import { getRepos } from '../../../adapters/Github'
 import { NativeSyntheticEvent, TextInputSubmitEditingEventData } from 'react-native'
-import { ListItemProps } from '../../molecules/ListItem'
+import { ItemData } from '../../molecules/ListItem'
 
 const { t } = i18n
 
@@ -13,7 +13,7 @@ export default function Home() {
 	/** Controls modal */
 	const [error, setError] = useState(false)
 	/** Stores repositories */
-	const [repos, setRepos] = useState<ListItemProps[]>([])
+	const [repos, setRepos] = useState<ItemData[]>([])
 
 	/** If a user is found, it sets setRepos variable with the user repositories data.
 	 * Otherwise, it shows the modal

@@ -8,7 +8,7 @@ function createInstance() {
 }
 
 /** Basic github instance */
-const api = createInstance()
+export const api = createInstance()
 
 /**
  * Retrieves a list of repositories or an error

@@ -17,7 +17,7 @@ const styles = StyleSheet.create({
 
 export default function App() {
   return (
-    <SafeAreaView style={styles.container}>
+    <SafeAreaView style={styles.container} testID="app-container" >
       <StatusBar style="auto" />
       <Home />
     </SafeAreaView>

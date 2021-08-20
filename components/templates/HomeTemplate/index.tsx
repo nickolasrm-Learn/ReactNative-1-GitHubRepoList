@@ -54,13 +54,15 @@ const HomeTemplate: React.FC<HomeTemplateProps> = (props) => {
 				<Title>
 					{props.title}
 				</Title>
-				<Input style={styles.input}
+				<Input testID="user-input"
+					style={styles.input}
 					placeholder={props.inputPlaceholder}
 					onSubmitEditing={props.onInputSubmit} />
 			</View>
 			<List style={styles.list}
 				data={props.data} />
-			<ErrorModal title={props.errorTitle}
+			<ErrorModal testID="error-modal"
+				title={props.errorTitle}
 				message={props.errorMessage}
 				setVisible={props.setError}
 				visible={props.error}

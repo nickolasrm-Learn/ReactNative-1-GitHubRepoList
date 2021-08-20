@@ -17,7 +17,8 @@ interface ErrorModalProps {
 	/** Displayes the modal if enabled */
 	visible: boolean,
 	/** Function that controls the visible prop value */
-	setVisible: (value: boolean) => void
+	setVisible: (value: boolean) => void,
+	testID?: string
 }
 
 const styles = StyleSheet.create({
@@ -53,7 +54,8 @@ const ErrorModal: React.FC<ErrorModalProps> = (props) => {
 		props.setVisible(false)
 	}, [props.setVisible])
 
-	return (<Modal animationType="fade"
+	return (<Modal testID={props.testID || ''}
+		animationType="fade"
 		transparent={true}
 		visible={props.visible}>
 		<View style={styles.background}>
@@ -63,6 +65,7 @@ const ErrorModal: React.FC<ErrorModalProps> = (props) => {
 					<Text>{props.message}</Text>
 				</View>
 				<ModalButton
+					testID="modal-button"
 					style={styles.button}
 					color={errorForegroundColor}
 					onPress={handlePress}
