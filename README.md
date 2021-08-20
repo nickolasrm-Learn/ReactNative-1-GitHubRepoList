@@ -6,16 +6,15 @@
 
 <div align="center">
   <img src="https://github.com/nickolasrm-Learn/ReactNative-1-GitHubRepoList/actions/workflows/build.yml/badge.svg" />
-  <a href='https://coveralls.io/github/nickolasrm-Learn/ReactNative-1-GitHubRepoList?branch=main'><img src='https://coveralls.io/repos/github/nickolasrm-Learn/ReactNative-1-GitHubRepoList/badge.svg?branch=main'     alt='Coverage Status' /></a>
+  <a href='https://coveralls.io/github/nickolasrm-Learn/ReactNative-1-GitHubRepoList?branch=main'><img src='https://coveralls.io/repos/github/nickolasrm-Learn/ReactNative-1-GitHubRepoList/badge.svg?branch=main' alt='Coverage Status' /></a>
 </div>
 
 ## Introduction
 GitHubRepoList is the first application I made using React Native. It is a simple app that fetches repositories given a username, and displays them in a list. Otherwise it shows you a not found modal.
 
 ## GIF
-<img src="https://raw.githubusercontent.com/nickolasrm-Learn/ReactNative-1-GitHubRepoList/main/screenshots/overview.png" 
-  alt="An animation of the app usage" 
-  width="200px"/>
+<img src="https://raw.githubusercontent.com/nickolasrm-Learn/ReactNative-1-GitHubRepoList/main/screenshots/overview.gif" 
+  alt="An animation of the app usage" />
 
 ## Features
 * Responsive: Both texts and screen rotation are optimized
