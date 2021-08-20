@@ -1,5 +1,12 @@
 import axios from 'axios'
 
+/*
+Github adapter is a file containing all functions to interact with the github api.
+An adapter is a set of functions related to external application connection.
+For more information about api interactions, look at the axios website:
+https://axios-http.com/
+*/
+
 /** Creates a new instance for github api */
 function createInstance() {
 	return axios.create({
